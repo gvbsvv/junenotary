@@ -85,7 +85,7 @@ a {
   transition: color 0.2s;
 }
 
-a:hover {
+a:hover, .profile-link:hover {
   color: #2a4365;
   text-decoration: underline;
 }
@@ -97,12 +97,41 @@ a:hover {
   font-size: 1.05rem;
 }
 
-/* Remove review section and form styles */
-.review-form,
-.review-form label,
-.review-form input,
-.review-form select,
-.review-form textarea,
-.review-form button {
-  display: none !important;
+.signing-agent-badge {
+  margin: 0.5rem 0 1rem 0;
+  text-align: left;
+}
+
+.signing-agent-badge img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.13);
+  background: #fff;
+  border: 2px solid #ffe066;
+}
+
+.profile-link {
+  display: inline-block;
+  margin: 0.5rem 0 1.2rem 0;
+  font-weight: bold;
+  color: #2a4365;
+  background: #ffe066;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.profile-link:hover {
+  background: #2a4365;
+  color: #ffe066;
+}
+
+.signing-agent-description {
+  margin-top: 1.2rem;
+  background: #f6f9ff;
+  border-left: 5px solid #486581;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  font-style: italic;
+  color: #2a4365;
 }
